@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal de Apoio ao Estudante - Bullying</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f2f2f2;
+color:#333;
+}
+
+header{
+background:#1565c0;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#0d47a1;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+section{
+padding:30px;
+max-width:900px;
+margin:auto;
+}
+
+h2{
+color:#1565c0;
+margin-bottom:15px;
+}
+
+img{
+width:100%;
+border-radius:10px;
+margin:20px 0;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.2);
+margin-bottom:30px;
+}
+
+textarea{
+width:100%;
+height:120px;
+padding:10px;
+margin-top:10px;
+}
+
+button{
+background:#1565c0;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+margin-top:10px;
+}
+
+button:hover{
+background:#0d47a1;
+}
+
+.pergunta{
+margin-bottom:20px;
+}
+
+footer{
+background:#1565c0;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+ul{
+margin-left:20px;
+}
+
+#resultado{
+font-size:20px;
+font-weight:bold;
+margin-top:20px;
+color:green;
+}
+
+a.link{
+color:#1565c0;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Portal de Apoio ao Estudante</h1>
+<p>Bullying: respeito faz toda a diferença.</p>
+</header>
+
+<nav>
+<a href="#inicio">Início</a>
+<a href="#escuta">Portal de Escuta</a>
+<a href="#quiz">Quiz</a>
+<a href="#referencias">Referências</a>
+</nav>
+
+<section id="inicio">
+
+<div class="card">
+
+<h2>Bem-vindo!</h2>
+
+<p>
+Este portal foi criado para informar, orientar e acolher estudantes que convivem
+com situações de bullying.
+</p>
+
+<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=900" alt="Escola">
+
+<p>
+Aqui você encontrará informações importantes, poderá fazer um pequeno quiz
+e conhecer formas de procurar ajuda.
+</p>
+
+</div>
+
+</section>
+
+<section id="escuta">
+
+<div class="card">
+
+<h2>Portal de Escuta</h2>
+
+<p>
+Escreva um desabafo (simulação).
+Nenhuma informação será armazenada.
+</p>
+
+<textarea id="texto" placeholder="Escreva aqui..."></textarea>
+
+<br>
+
+<button onclick="enviar()">Enviar</button>
+
+<p id="mensagem"></p>
+
+<h3>Frases motivacionais</h3>
+
+<ul>
+<li>Você merece respeito.</li>
+<li>Você não está sozinho.</li>
+<li>Pedir ajuda é um ato de coragem.</li>
+<li>Todos têm direito a estudar em paz.</li>
+</ul>
+
+<br>
+
+<h3>Procure ajuda</h3>
+
+<p>
+Converse com um professor, pedagogo, direção da escola,
+familiares ou outro adulto de confiança.
+</p>
+
+</div>
+
+</section>
+
+<section id="quiz">
+
+<div class="card">
+
+<h2>Quiz</h2>
+
+<form id="quizForm">
+
+<div class="pergunta">
+<p>1. Espalhar apelidos ofensivos é bullying?</p>
+
+<input type="radio" name="p1" value="certo"> Sim
+
+<input type="radio" name="p1" value="errado"> Não
+
+</div>
+
+<div class="pergunta">
+<p>2. Ignorar alguém de propósito pode ser uma forma de bullying?</p>
+
+<input type="radio" name="p2" value="certo"> Sim
+
+<input type="radio" name="p2" value="errado"> Não
+
+</div>
+
+<div class="pergunta">
+<p>3. Se você sofrer bullying, deve procurar ajuda?</p>
+
+<input type="radio" name="p3" value="certo"> Sim
+
+<input type="radio" name="p3" value="errado"> Não
+
+</div>
+
+<div class="pergunta">
+<p>4. Respeitar as diferenças ajuda a combater o bullying?</p>
+
+<input type="radio" name="p4" value="certo"> Sim
+
+<input type="radio" name="p4" value="errado"> Não
+
+</div>
+
+<div class="pergunta">
+<p>5. Fazer piadas que machucam os colegas é correto?</p>
+
+<input type="radio" name="p5" value="errado"> Sim
+
+<input type="radio" name="p5" value="certo"> Não
+
+</div>
+
+<button type="button" onclick="corrigir()">
+Ver Resultado
+</button>
+
+</form>
+
+<p id="resultado"></p>
+
+</div>
+
+</section>
+
+<section id="referencias">
+
+<div class="card">
+
+<h2>Referências</h2>
+
+<ul>
+
+<li>
+<a class="link" href="https://www.gov.br/mec" target="_blank">
+Ministério da Educação
+</a>
+</li>
+
+<li>
+<a class="link" href="https://www.gov.br/saude" target="_blank">
+Ministério da Saúde
+</a>
+</li>
+
+<li>
+<a class="link" href="https://www.unicef.org/brazil" target="_blank">
+UNICEF Brasil
+</a>
+</li>
+
+<li>
+<a class="link" href="https://brasilescola.uol.com.br" target="_blank">
+Brasil Escola
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+Projeto Escolar - Portal de Apoio ao Estudante
+</p>
+
+</footer>
+
+<script>
+
+function enviar(){
+
+let texto=document.getElementById("texto").value;
+
+if(texto==""){
+
+alert("Escreva um desabafo.");
+
+return;
+
+}
+
+document.getElementById("mensagem").innerHTML=
+"<br><b>Obrigado por compartilhar.</b><br>Você merece respeito. Procure um professor, pedagogo ou um adulto de confiança caso precise de ajuda.";
+
+document.getElementById("texto").value="";
+
+}
+
+function corrigir(){
+
+let pontos=0;
+
+if(document.querySelector('input[name="p1"]:checked')?.value=="certo")
+pontos++;
+
+if(document.querySelector('input[name="p2"]:checked')?.value=="certo")
+pontos++;
+
+if(document.querySelector('input[name="p3"]:checked')?.value=="certo")
+pontos++;
+
+if(document.querySelector('input[name="p4"]:checked')?.value=="certo")
+pontos++;
+
+if(document.querySelector('input[name="p5"]:checked')?.value=="certo")
+pontos++;
+
+document.getElementById("resultado").innerHTML=
+"Você acertou "+pontos+" de 5 perguntas.";
+
+}
+
+</script>
+
+</body>
+</html>
