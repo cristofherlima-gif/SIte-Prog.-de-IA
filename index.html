@@ -7,7 +7,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Portal de Apoio ao Estudante - Bullying</title>
+<title>Operação: Todos Contra o Bullying</title>
 
 
 <style>
@@ -18,7 +18,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+font-family:'Arial', sans-serif;
 
 }
 
@@ -34,7 +34,7 @@ scroll-behavior:smooth;
 
 body{
 
-background:#fff8dc;
+background:#fff3cd;
 color:#333;
 line-height:1.6;
 
@@ -46,10 +46,26 @@ line-height:1.6;
 
 header{
 
-background:linear-gradient(135deg,#ff9800,#ffb300);
+background:linear-gradient(135deg,#ff9800,#e65100);
 color:white;
 text-align:center;
-padding:35px 20px;
+padding:40px 20px;
+position:relative;
+overflow:hidden;
+
+}
+
+
+
+header::after{
+
+content:"🛡️ ⭐ 🛡️ ⭐ 🛡️";
+position:absolute;
+font-size:50px;
+opacity:0.15;
+bottom:10px;
+left:0;
+right:0;
 
 }
 
@@ -57,8 +73,9 @@ padding:35px 20px;
 
 header h1{
 
-font-size:38px;
+font-size:40px;
 margin-bottom:10px;
+text-transform:uppercase;
 
 }
 
@@ -66,7 +83,7 @@ margin-bottom:10px;
 
 header p{
 
-font-size:20px;
+font-size:21px;
 
 }
 
@@ -74,12 +91,12 @@ font-size:20px;
 
 .criador{
 
-margin-top:15px;
-font-size:18px;
-background:rgba(255,255,255,0.2);
-padding:10px;
-border-radius:10px;
 display:inline-block;
+margin-top:15px;
+background:rgba(255,255,255,0.25);
+padding:10px 20px;
+border-radius:15px;
+font-weight:bold;
 
 }
 
@@ -89,7 +106,7 @@ display:inline-block;
 
 nav{
 
-background:#e65100;
+background:#8d3b00;
 padding:15px;
 text-align:center;
 position:sticky;
@@ -104,8 +121,8 @@ nav a{
 
 color:white;
 text-decoration:none;
-margin:10px;
 font-weight:bold;
+margin:12px;
 
 }
 
@@ -119,12 +136,14 @@ color:#ffe082;
 
 
 
-/* CONTEÚDO */
+
+
+/* SEÇÕES */
 
 section{
 
 width:90%;
-max-width:1000px;
+max-width:1100px;
 margin:auto;
 padding:30px 0;
 
@@ -137,8 +156,32 @@ padding:30px 0;
 background:white;
 padding:30px;
 border-radius:20px;
-box-shadow:0 5px 15px rgba(0,0,0,0.15);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
 margin-bottom:30px;
+animation:aparecer 0.8s;
+
+}
+
+
+
+@keyframes aparecer{
+
+
+from{
+
+opacity:0;
+transform:translateY(30px);
+
+}
+
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
 
 }
 
@@ -147,7 +190,7 @@ margin-bottom:30px;
 h2{
 
 color:#e65100;
-font-size:28px;
+font-size:30px;
 margin-bottom:20px;
 
 }
@@ -174,7 +217,7 @@ margin-bottom:15px;
 img{
 
 width:100%;
-height:350px;
+height:380px;
 object-fit:cover;
 border-radius:20px;
 margin:20px 0;
@@ -183,17 +226,52 @@ margin:20px 0;
 
 
 
+
+
+/* ESTILO DE MISSÃO */
+
+.missao{
+
+background:linear-gradient(135deg,#fff8dc,#ffe082);
+border:3px solid #ffb300;
+padding:25px;
+border-radius:20px;
+text-align:center;
+
+}
+
+
+
+.missao h2{
+
+color:#8d3b00;
+
+}
+
+
+
+.icone{
+
+font-size:45px;
+
+}
+
+
+
+
+
 /* BOTÕES */
 
 button{
 
-background:#f57c00;
+background:#e65100;
 color:white;
 border:none;
-padding:12px 25px;
-border-radius:10px;
-cursor:pointer;
+padding:13px 28px;
+border-radius:12px;
 font-size:16px;
+cursor:pointer;
+font-weight:bold;
 
 }
 
@@ -201,9 +279,11 @@ font-size:16px;
 
 button:hover{
 
-background:#e65100;
+background:#bf360c;
+transform:scale(1.05);
 
 }
+
 
 
 
@@ -219,25 +299,11 @@ margin-left:25px;
 
 li{
 
-margin-bottom:8px;
+margin-bottom:10px;
 
 }
 
 
-
-/* ÁREA DE TEXTO */
-
-textarea{
-
-width:100%;
-height:140px;
-padding:15px;
-border-radius:12px;
-border:2px solid #ffb300;
-font-size:16px;
-resize:none;
-
-}
 
 
 
@@ -245,110 +311,18 @@ resize:none;
 
 footer{
 
-background:#e65100;
+background:#8d3b00;
 color:white;
 text-align:center;
 padding:25px;
-margin-top:30px;
 
 }
 
 
 
-/* LINKS */
-
-.link{
-
-color:#e65100;
-font-weight:bold;
-
-}
 
 
-
-/* QUIZ */
-
-.quiz-container{
-
-background:linear-gradient(135deg,#fff3cd,#ffe082);
-padding:25px;
-border-radius:20px;
-border:3px solid #ffb300;
-
-}
-
-
-
-.quiz-titulo{
-
-text-align:center;
-color:#e65100;
-font-size:30px;
-
-}
-
-
-
-.quiz-info{
-
-background:white;
-padding:15px;
-border-radius:15px;
-text-align:center;
-margin:20px 0;
-
-}
-
-
-
-.pergunta{
-
-background:white;
-padding:20px;
-border-radius:15px;
-margin-bottom:20px;
-border-left:6px solid #f57c00;
-
-}
-
-
-
-.pergunta label{
-
-display:block;
-background:#fff8dc;
-padding:10px;
-margin:8px 0;
-border-radius:8px;
-cursor:pointer;
-
-}
-
-
-
-.pergunta label:hover{
-
-background:#ffe082;
-
-}
-
-
-
-#resultado{
-
-background:white;
-padding:15px;
-border-radius:10px;
-font-size:20px;
-font-weight:bold;
-text-align:center;
-margin-top:20px;
-
-}
-
-
-
-/* RESPONSIVIDADE */
+/* RESPONSIVO */
 
 @media(max-width:600px){
 
@@ -363,7 +337,6 @@ font-size:28px;
 nav a{
 
 display:block;
-margin:8px;
 
 }
 
@@ -376,6 +349,7 @@ height:220px;
 
 
 }
+
 
 
 </style>
@@ -393,12 +367,13 @@ height:220px;
 
 
 <h1>
-Portal de Apoio ao Estudante
+⚔️ Operação: Todos Contra o Bullying ⚔️
 </h1>
 
 
+
 <p>
-Bullying: respeito, empatia e inclusão.
+Uma missão mundial pelo respeito, empatia e união.
 </p>
 
 
@@ -410,7 +385,10 @@ Criador: Cristofher Valcanaia 1M
 </div>
 
 
+
 </header>
+
+
 
 
 
@@ -418,18 +396,38 @@ Criador: Cristofher Valcanaia 1M
 <nav>
 
 
-<a href="#inicio">Início</a>
+<a href="#inicio">
+Base Principal
+</a>
 
-<a href="#informacoes">Informações</a>
 
-<a href="#escuta">Portal de Escuta</a>
+<a href="#informacoes">
+Conhecimento
+</a>
 
-<a href="#quiz">Quiz</a>
 
-<a href="#referencias">Referências</a>
+<a href="#missoes">
+Missões
+</a>
+
+
+<a href="#escuta">
+Portal de Escuta
+</a>
+
+
+<a href="#quiz">
+Desafio Final
+</a>
+
+
+<a href="#referencias">
+Fontes
+</a>
 
 
 </nav>
+
 
 
 
@@ -442,16 +440,27 @@ Criador: Cristofher Valcanaia 1M
 <div class="card">
 
 
+
+<div class="missao">
+
+
+<div class="icone">
+🛡️
+</div>
+
+
+
 <h2>
-Bem-vindo ao Portal de Apoio ao Estudante
+Bem-vindo, Soldado do Respeito!
 </h2>
 
 
 
 <p>
 
-Este site foi criado para informar, acolher e orientar estudantes
-sobre o bullying e suas consequências no ambiente escolar.
+Você faz parte da maior equipe de combate ao bullying:
+uma comunidade formada por estudantes, professores e famílias
+que lutam todos os dias por uma escola mais segura.
 
 </p>
 
@@ -459,34 +468,48 @@ sobre o bullying e suas consequências no ambiente escolar.
 
 <p>
 
-Nosso objetivo é incentivar o respeito, a empatia e a convivência
-saudável entre todos os alunos.
-
-</p>
-
-
-
-<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1000"
-alt="Estudantes em uma escola">
-
-
-
-<h3>
-Você não está sozinho!
-</h3>
-
-
-<p>
-
-Se você ou alguém que conhece está passando por uma situação de bullying,
-é importante conversar com uma pessoa de confiança. Pedir ajuda é uma
-atitude de coragem.
+Nesta missão você aprenderá sobre bullying, realizará desafios,
+ganhará pontos de respeito e descobrirá como ajudar outras pessoas.
 
 </p>
 
 
 
 </div>
+
+
+
+
+
+
+
+<img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=1000"
+alt="Estudantes unidos">
+
+
+
+
+
+
+<h3>
+🎯 Objetivo da missão
+</h3>
+
+
+
+<p>
+
+O objetivo deste portal é informar e acolher estudantes,
+mostrando que todos têm um papel importante na construção
+de um ambiente escolar com respeito e amizade.
+
+</p>
+
+
+
+
+</div>
+
 
 
 </section>
@@ -497,16 +520,32 @@ atitude de coragem.
 
 
 <h2>
+📚 Centro de Inteligência: Conhecendo o Inimigo
+</h2>
+
+
+
+<p>
+
+Antes de vencer uma batalha, é necessário conhecer o problema.
+Nesta missão, nosso objetivo é entender o bullying para conseguir
+combatê-lo de forma correta.
+
+</p>
+
+
+
+<h3>
 O que é bullying?
-</h2>
+</h3>
 
 
 
 <p>
 
-Bullying é uma forma de violência caracterizada por atitudes agressivas,
-intencionais e repetidas contra uma pessoa ou grupo. Essas ações podem
-causar sofrimento físico e emocional.
+Bullying é uma prática de agressão intencional e repetitiva,
+onde uma pessoa ou grupo tenta machucar, humilhar ou prejudicar
+outra pessoa.
 
 </p>
 
@@ -514,16 +553,17 @@ causar sofrimento físico e emocional.
 
 <p>
 
-O bullying pode acontecer em diferentes lugares, como na escola, na internet,
-em grupos de mensagens ou em qualquer ambiente onde existam relações entre
-pessoas.
+Ele pode acontecer através de palavras, atitudes físicas,
+exclusão social ou pela internet.
 
 </p>
+
+
 
 
 
 <h3>
-Tipos de bullying
+Tipos de bullying identificados:
 </h3>
 
 
@@ -532,136 +572,42 @@ Tipos de bullying
 
 
 <li>
-<b>Bullying verbal:</b> acontece por meio de insultos, apelidos ofensivos,
-ameaças e comentários que machucam.
+
+🎯 <b>Verbal:</b> apelidos ofensivos, insultos e ameaças.
+
 </li>
+
 
 
 <li>
-<b>Bullying físico:</b> envolve agressões como empurrões, socos ou destruição
-de objetos pessoais.
+
+🛡️ <b>Físico:</b> empurrões, agressões e danos aos objetos de alguém.
+
 </li>
+
 
 
 <li>
-<b>Bullying social:</b> ocorre quando alguém é excluído, isolado ou quando
-são espalhados boatos sobre essa pessoa.
+
+🤝 <b>Social:</b> excluir pessoas, espalhar rumores ou impedir amizades.
+
 </li>
+
 
 
 <li>
-<b>Cyberbullying:</b> acontece através da internet, redes sociais,
-mensagens ou jogos online.
+
+💻 <b>Digital:</b> ataques realizados por redes sociais,
+mensagens ou plataformas online.
+
 </li>
+
 
 
 </ul>
 
 
 
-<h3>
-Como identificar uma situação de bullying?
-</h3>
-
-
-
-<p>
-
-Alguns sinais podem indicar que uma pessoa está sofrendo bullying, como:
-medo de ir à escola, tristeza frequente, isolamento, queda nas notas,
-mudanças de comportamento e perda de interesse em atividades.
-
-</p>
-
-
-
-<p>
-
-É importante observar esses sinais e oferecer apoio. Uma conversa acolhedora
-pode fazer uma grande diferença.
-
-</p>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<section id="informacoes2">
-
-
-<div class="card">
-
-
-<h2>
-Como combater o bullying?
-</h2>
-
-
-
-<p>
-
-Combater o bullying depende da participação de todos. A construção de um
-ambiente escolar seguro começa com pequenas atitudes de respeito.
-
-</p>
-
-
-
-<ul>
-
-
-<li>
-Respeitar as diferenças entre as pessoas.
-</li>
-
-
-<li>
-Não participar de brincadeiras que humilham alguém.
-</li>
-
-
-<li>
-Ajudar colegas que estejam passando por dificuldades.
-</li>
-
-
-<li>
-Conversar com professores ou responsáveis quando algo estiver errado.
-</li>
-
-
-<li>
-Praticar empatia e pensar antes de agir.
-</li>
-
-
-</ul>
-
-
-
-<h3>
-O papel de quem presencia o bullying
-</h3>
-
-
-
-<p>
-
-Quem presencia uma situação de bullying também pode ajudar. Não rir,
-não incentivar o agressor e procurar um adulto responsável são atitudes
-importantes.
-
-</p>
 
 
 
@@ -673,9 +619,9 @@ Consequências do bullying
 
 <p>
 
-As vítimas de bullying podem desenvolver sentimentos de tristeza,
-ansiedade, insegurança e medo. Por isso, o apoio da escola, família e amigos
-é fundamental.
+O bullying pode causar tristeza, medo, ansiedade,
+dificuldade de concentração e problemas de autoestima.
+Por isso, combater esse problema é uma missão de todos.
 
 </p>
 
@@ -693,6 +639,265 @@ ansiedade, insegurança e medo. Por isso, o apoio da escola, família e amigos
 
 
 
+
+<section id="missoes">
+
+
+<div class="card">
+
+
+
+<div class="missao">
+
+
+<h2>
+🎖️ Missão 1: Operação Respeito
+</h2>
+
+
+
+<p>
+
+Escolha a atitude correta para fortalecer sua equipe
+contra o bullying.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="desafio">
+
+
+<h3>
+Situação 1:
+</h3>
+
+
+
+<p>
+
+Você vê um colega sendo excluído pelos outros alunos.
+Qual atitude ajuda a equipe?
+
+</p>
+
+
+
+<button onclick="ganharPonto()">
+
+🤝 Chamar a pessoa para participar
+
+</button>
+
+
+
+<button onclick="perderPonto()">
+
+😆 Rir junto com os outros
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="desafio">
+
+
+<h3>
+Situação 2:
+</h3>
+
+
+
+<p>
+
+Um amigo conta que está sofrendo bullying.
+O que você faz?
+
+</p>
+
+
+
+<button onclick="ganharPonto()">
+
+🛡️ Escutar e procurar ajuda
+
+</button>
+
+
+
+<button onclick="perderPonto()">
+
+🤐 Dizer para guardar segredo
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="desafio">
+
+
+<h3>
+Situação 3:
+</h3>
+
+
+
+<p>
+
+Você recebe uma mensagem ofensiva sobre um colega.
+Qual é a melhor escolha?
+
+</p>
+
+
+
+<button onclick="ganharPonto()">
+
+🚫 Não compartilhar e denunciar
+
+</button>
+
+
+
+<button onclick="perderPonto()">
+
+📲 Enviar para outras pessoas
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<h3 id="pontuacao">
+
+⭐ Pontos de Respeito: 0
+
+</h3>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="campanha">
+
+
+<div class="card">
+
+
+<h2>
+🌎 Aliança Mundial Contra o Bullying
+</h2>
+
+
+
+<p>
+
+Assim como grandes equipes trabalham juntas para superar
+desafios, a escola também precisa de união para vencer
+o bullying.
+
+</p>
+
+
+
+<p>
+
+Cada estudante faz parte dessa aliança. Pequenas atitudes,
+como respeitar, ajudar e ouvir, tornam a comunidade escolar
+mais forte.
+
+</p>
+
+
+
+
+<div class="missao">
+
+
+<h3>
+🪖 Regras da equipe do respeito:
+</h3>
+
+
+<ul>
+
+
+<li>
+Nunca usar palavras para machucar alguém.
+</li>
+
+
+<li>
+Proteger colegas que precisam de ajuda.
+</li>
+
+
+<li>
+Valorizar as diferenças.
+</li>
+
+
+<li>
+Denunciar situações injustas.
+</li>
+
+
+<li>
+Construir amizades baseadas em respeito.
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
 <section id="escuta">
 
 
@@ -700,24 +905,36 @@ ansiedade, insegurança e medo. Por isso, o apoio da escola, família e amigos
 
 
 
+<div class="missao">
+
+
+<div class="icone">
+💬
+</div>
+
+
 <h2>
-💬 Portal de Escuta
+Portal de Escuta: Central de Apoio
 </h2>
 
 
 
 <p>
 
-Este espaço é uma simulação de acolhimento. O texto digitado não será
-armazenado ou enviado para ninguém. Ele serve apenas para representar um
-local onde o estudante pode expressar seus sentimentos.
+Toda grande equipe precisa de um lugar seguro para conversar.
+Aqui você pode escrever um desabafo de forma simbólica.
 
 </p>
 
 
+</div>
 
 
-<textarea id="texto" placeholder="Escreva seu desabafo aqui..."></textarea>
+
+
+
+<textarea id="texto" placeholder="Escreva aqui o que você gostaria de compartilhar..."></textarea>
+
 
 
 
@@ -725,9 +942,10 @@ local onde o estudante pode expressar seus sentimentos.
 
 
 
+
 <button onclick="enviar()">
 
-Enviar mensagem
+📨 Enviar para a Central
 
 </button>
 
@@ -742,7 +960,7 @@ Enviar mensagem
 
 
 <h3>
-Mensagens importantes
+🛡️ Mensagens da equipe de apoio
 </h3>
 
 
@@ -751,23 +969,24 @@ Mensagens importantes
 
 
 <li>
-Você merece respeito e segurança.
+💛 Seus sentimentos são importantes.
 </li>
 
 
 <li>
-Se algo está machucando você, procure ajuda.
+🤝 Pedir ajuda demonstra coragem.
 </li>
 
 
 <li>
-Seus sentimentos são importantes.
+⭐ Você merece respeito todos os dias.
 </li>
 
 
 <li>
-Você não precisa enfrentar problemas sozinho.
+🌎 Juntos podemos construir uma escola melhor.
 </li>
+
 
 
 </ul>
@@ -776,15 +995,17 @@ Você não precisa enfrentar problemas sozinho.
 
 
 
+
+
 <h3>
-Onde procurar ajuda?
+Onde buscar reforços?
 </h3>
 
 
 
 <p>
 
-Quando precisar, converse com:
+Quando precisar de ajuda, procure pessoas preparadas para apoiar você:
 
 </p>
 
@@ -794,31 +1015,265 @@ Quando precisar, converse com:
 
 
 <li>
-Um professor ou professora.
+👨‍🏫 Professores.
 </li>
 
 
 <li>
-Um pedagogo ou orientador escolar.
+📚 Pedagogos e orientação escolar.
 </li>
 
 
 <li>
-A direção da escola.
+🏫 Direção da escola.
 </li>
 
 
 <li>
-Seus familiares ou responsáveis.
+👨‍👩‍👧 Familiares ou responsáveis.
 </li>
 
 
 <li>
-Outro adulto de confiança.
+🤝 Adultos de confiança.
 </li>
 
 
 </ul>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="jogos">
+
+
+<div class="card">
+
+
+<div class="missao">
+
+
+<h2>
+🎮 Área de Treinamento: Desafios do Respeito
+</h2>
+
+
+
+<p>
+
+Antes da missão final, treine suas habilidades de empatia.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<h3>
+🏅 Desafio 1: Escolha a melhor resposta
+</h3>
+
+
+
+<p>
+
+Um colega está sozinho no intervalo e parece triste.
+O que um membro da equipe do respeito faria?
+
+</p>
+
+
+
+<button onclick="respostaJogo(true)">
+
+Conversar e convidar para participar
+
+</button>
+
+
+<button onclick="respostaJogo(false)">
+
+Ignorar e continuar andando
+
+</button>
+
+
+
+
+
+<h3 id="jogo1"></h3>
+
+
+
+
+
+
+
+
+
+<h3>
+🎯 Desafio 2: Verdadeiro ou falso
+</h3>
+
+
+
+<p>
+
+"Compartilhar uma mensagem ofensiva sobre alguém pode ser uma forma de bullying."
+
+</p>
+
+
+
+<button onclick="respostaJogo(true)">
+
+Verdadeiro
+
+</button>
+
+
+
+<button onclick="respostaJogo(false)">
+
+Falso
+
+</button>
+
+
+
+
+<h3 id="jogo2"></h3>
+
+
+
+
+
+
+
+
+<h3>
+⭐ Desafio 3: Complete a missão
+</h3>
+
+
+
+<p>
+
+Escolha uma palavra que representa uma escola sem bullying:
+
+</p>
+
+
+
+<button onclick="escolherPalavra('respeito')">
+
+Respeito
+
+</button>
+
+
+
+<button onclick="escolherPalavra('medo')">
+
+Medo
+
+</button>
+
+
+
+<button onclick="escolherPalavra('odio')">
+
+Ódio
+
+</button>
+
+
+
+
+<h3 id="jogo3"></h3>
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section id="conquistas">
+
+
+<div class="card">
+
+
+<h2>
+🏆 Quadro de Conquistas
+</h2>
+
+
+
+<p>
+
+Durante sua jornada você poderá conquistar medalhas simbólicas:
+
+</p>
+
+
+
+<ul>
+
+
+<li>
+🥉 Recruta do Respeito - participou dos desafios.
+</li>
+
+
+<li>
+🥈 Guardião da Empatia - ajudou nas escolhas corretas.
+</li>
+
+
+<li>
+🥇 Líder Contra o Bullying - demonstrou conhecimento e solidariedade.
+</li>
+
+
+</ul>
+
+
+
+
+<h3 id="medalha">
+
+Nenhuma medalha conquistada ainda.
+
+</h3>
 
 
 
@@ -836,9 +1291,10 @@ Outro adulto de confiança.
 <div class="quiz-container">
 
 
+
 <h2 class="quiz-titulo">
 
-🧠 Quiz: Você entende sobre Bullying?
+⚔️ Missão Final: Teste do Guardião do Respeito
 
 </h2>
 
@@ -850,14 +1306,16 @@ Outro adulto de confiança.
 
 <p>
 
-Teste seus conhecimentos sobre respeito, empatia e convivência escolar.
+Você chegou à última batalha de conhecimento.
+Responda corretamente e mostre que está preparado
+para combater o bullying.
 
 </p>
 
 
 <p>
 
-⭐ Responda as 10 perguntas e descubra sua pontuação!
+🏅 Sua missão: alcançar o maior número de pontos possível!
 
 </p>
 
@@ -880,26 +1338,21 @@ Teste seus conhecimentos sobre respeito, empatia e convivência escolar.
 <div class="pergunta">
 
 <p>
-<b>1.</b> O que é bullying?
+<b>1.</b> O bullying acontece quando:
 </p>
 
 
 <label>
 <input type="radio" name="p1" value="certo">
-Uma agressão repetida que causa sofrimento a outra pessoa.
+Uma pessoa é atacada repetidamente com intenção de machucar.
 </label>
 
 
 <label>
 <input type="radio" name="p1" value="errado">
-Uma brincadeira onde todos se divertem.
+Duas pessoas conversam normalmente.
 </label>
 
-
-<label>
-<input type="radio" name="p1" value="errado">
-Uma discussão comum entre amigos.
-</label>
 
 </div>
 
@@ -912,20 +1365,21 @@ Uma discussão comum entre amigos.
 <div class="pergunta">
 
 <p>
-<b>2.</b> Apelidos ofensivos podem ser uma forma de bullying?
+<b>2.</b> Qual atitude fortalece a equipe contra o bullying?
 </p>
 
 
 <label>
 <input type="radio" name="p2" value="certo">
-Sim, porque podem machucar e humilhar alguém.
+Praticar respeito e ajudar colegas.
 </label>
 
 
 <label>
 <input type="radio" name="p2" value="errado">
-Não, porque são apenas palavras.
+Incentivar agressões.
 </label>
+
 
 </div>
 
@@ -944,14 +1398,15 @@ Não, porque são apenas palavras.
 
 <label>
 <input type="radio" name="p3" value="certo">
-Na internet, redes sociais e ambientes digitais.
+Por meio da internet e tecnologias digitais.
 </label>
 
 
 <label>
 <input type="radio" name="p3" value="errado">
-Somente dentro da sala de aula.
+Somente em esportes.
 </label>
+
 
 </div>
 
@@ -964,26 +1419,21 @@ Somente dentro da sala de aula.
 <div class="pergunta">
 
 <p>
-<b>4.</b> Qual atitude ajuda a combater o bullying?
+<b>4.</b> Ao perceber alguém sofrendo bullying, você deve:
 </p>
 
 
 <label>
 <input type="radio" name="p4" value="certo">
-Respeitar as diferenças e ajudar colegas.
+Procurar ajuda e apoiar a pessoa.
 </label>
 
 
 <label>
 <input type="radio" name="p4" value="errado">
-Ignorar quem está sofrendo.
+Fingir que não viu.
 </label>
 
-
-<label>
-<input type="radio" name="p4" value="errado">
-Apoiar quem pratica agressões.
-</label>
 
 </div>
 
@@ -996,20 +1446,21 @@ Apoiar quem pratica agressões.
 <div class="pergunta">
 
 <p>
-<b>5.</b> Se uma pessoa sofre bullying, ela deve:
+<b>5.</b> A empatia significa:
 </p>
 
 
 <label>
 <input type="radio" name="p5" value="certo">
-Procurar ajuda de alguém de confiança.
+Compreender e respeitar os sentimentos dos outros.
 </label>
 
 
 <label>
 <input type="radio" name="p5" value="errado">
-Guardar tudo e não contar para ninguém.
+Pensar somente em si mesmo.
 </label>
+
 
 </div>
 
@@ -1022,20 +1473,21 @@ Guardar tudo e não contar para ninguém.
 <div class="pergunta">
 
 <p>
-<b>6.</b> Espalhar boatos sobre alguém pode causar:
+<b>6.</b> Compartilhar uma foto para humilhar alguém é:
 </p>
 
 
 <label>
 <input type="radio" name="p6" value="certo">
-Sofrimento emocional e problemas de convivência.
+Uma atitude prejudicial e pode ser cyberbullying.
 </label>
 
 
 <label>
 <input type="radio" name="p6" value="errado">
-Nenhuma consequência.
+Uma brincadeira sem consequências.
 </label>
+
 
 </div>
 
@@ -1048,98 +1500,102 @@ Nenhuma consequência.
 <div class="pergunta">
 
 <p>
-<b>7.</b> A empatia significa:
+<b>7.</b> Pedir ajuda quando sofre bullying demonstra:
 </p>
 
 
 <label>
 <input type="radio" name="p7" value="certo">
-Tentar compreender os sentimentos de outra pessoa.
-</label>
-
-
-<label>
-<input type="radio" name="p7" value="errado">
-Pensar apenas nos próprios sentimentos.
-</label>
-
-</div>
-
-
-
-
-
-
-
-<div class="pergunta">
-
-<p>
-<b>8.</b> Ao presenciar bullying, uma atitude correta é:
-</p>
-
-
-<label>
-<input type="radio" name="p8" value="certo">
-Buscar ajuda e apoiar a vítima.
-</label>
-
-
-<label>
-<input type="radio" name="p8" value="errado">
-Rir junto com os agressores.
-</label>
-
-</div>
-
-
-
-
-
-
-
-<div class="pergunta">
-
-<p>
-<b>9.</b> Respeitar as diferenças entre colegas ajuda a:
-</p>
-
-
-<label>
-<input type="radio" name="p9" value="certo">
-Criar um ambiente escolar mais seguro.
-</label>
-
-
-<label>
-<input type="radio" name="p9" value="errado">
-Aumentar conflitos.
-</label>
-
-</div>
-
-
-
-
-
-
-
-<div class="pergunta">
-
-<p>
-<b>10.</b> Pedir ajuda quando está sofrendo bullying demonstra:
-</p>
-
-
-<label>
-<input type="radio" name="p10" value="certo">
 Coragem e cuidado consigo mesmo.
 </label>
 
 
 <label>
-<input type="radio" name="p10" value="errado">
+<input type="radio" name="p7" value="errado">
 Fraqueza.
 </label>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="pergunta">
+
+<p>
+<b>8.</b> Uma escola sem bullying precisa de:
+</p>
+
+
+<label>
+<input type="radio" name="p8" value="certo">
+Respeito, diálogo e união.
+</label>
+
+
+<label>
+<input type="radio" name="p8" value="errado">
+Medo e silêncio.
+</label>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="pergunta">
+
+<p>
+<b>9.</b> Apelidos que machucam alguém podem ser:
+</p>
+
+
+<label>
+<input type="radio" name="p9" value="certo">
+Uma forma de agressão verbal.
+</label>
+
+
+<label>
+<input type="radio" name="p9" value="errado">
+Sempre uma brincadeira saudável.
+</label>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="pergunta">
+
+<p>
+<b>10.</b> Todos têm responsabilidade no combate ao bullying?
+</p>
+
+
+<label>
+<input type="radio" name="p10" value="certo">
+Sim, todos podem ajudar a criar um ambiente melhor.
+</label>
+
+
+<label>
+<input type="radio" name="p10" value="errado">
+Não, somente professores têm essa responsabilidade.
+</label>
+
 
 </div>
 
@@ -1151,10 +1607,9 @@ Fraqueza.
 
 <button type="button" onclick="corrigir()">
 
-🎯 Ver resultado
+🏆 Finalizar Missão
 
 </button>
-
 
 
 
@@ -1165,17 +1620,24 @@ Fraqueza.
 
 
 
+
+<div id="telaResultado">
+
+
 <p id="resultado"></p>
 
 
+</div>
+
+
+
+
 
 
 </div>
 
 
-
 </div>
-
 
 
 </section>
@@ -1195,17 +1657,18 @@ Fraqueza.
 
 
 <h2>
-📚 Referências utilizadas
+📚 Quartel de Referências
 </h2>
+
 
 
 
 <p>
 
-Fontes confiáveis utilizadas para pesquisa sobre bullying,
-convivência escolar e proteção de crianças e adolescentes:
+Fontes utilizadas para desenvolver este projeto:
 
 </p>
+
 
 
 
@@ -1259,7 +1722,7 @@ UNICEF Brasil
 
 <a class="link" href="https://www.who.int" target="_blank">
 
-Organização Mundial da Saúde (OMS)
+Organização Mundial da Saúde
 
 </a>
 
@@ -1273,7 +1736,7 @@ Organização Mundial da Saúde (OMS)
 
 <a class="link" href="https://www.planalto.gov.br" target="_blank">
 
-Legislação Brasileira - Planalto
+Portal da Legislação Brasileira
 
 </a>
 
@@ -1282,6 +1745,7 @@ Legislação Brasileira - Planalto
 
 
 </ul>
+
 
 
 
@@ -1295,12 +1759,13 @@ Legislação Brasileira - Planalto
 
 
 
+
 <footer>
 
 
 <p>
 
-Portal de Apoio ao Estudante - Tema: Bullying
+⚔️ Operação: Todos Contra o Bullying
 
 </p>
 
@@ -1312,11 +1777,293 @@ Criador: Cristofher Valcanaia 1M
 </p>
 
 
+
 </footer>
+<style>
+
+
+.desafio{
+
+background:#fff8dc;
+padding:20px;
+border-radius:15px;
+margin:20px 0;
+border-left:6px solid #ff9800;
+
+}
+
+
+
+#telaResultado{
+
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:30px;
+
+}
+
+
+
+#resultado{
+
+display:none;
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:white;
+width:80%;
+max-width:500px;
+padding:40px;
+border-radius:25px;
+text-align:center;
+font-size:22px;
+box-shadow:0 0 30px rgba(0,0,0,0.5);
+border:5px solid #ff9800;
+z-index:100;
+
+}
+
+
+
+#resultado.mostrar{
+
+display:block;
+animation:entrada 0.5s;
+
+}
+
+
+
+@keyframes entrada{
+
+from{
+
+transform:translate(-50%,-60%) scale(0.5);
+opacity:0;
+
+}
+
+
+to{
+
+transform:translate(-50%,-50%) scale(1);
+opacity:1;
+
+}
+
+
+}
+
+
+
+</style>
+
+
+
+
+
 <script>
 
 
+
+let pontosRespeito = 0;
+
+
+
+
+
+function ganharPonto(){
+
+
+pontosRespeito++;
+
+
+atualizarPontos();
+
+
+verificarMedalha();
+
+
+}
+
+
+
+
+
+function perderPonto(){
+
+
+if(pontosRespeito > 0){
+
+pontosRespeito--;
+
+}
+
+
+atualizarPontos();
+
+
+}
+
+
+
+
+
+function atualizarPontos(){
+
+
+document.getElementById("pontuacao").innerHTML =
+
+"⭐ Pontos de Respeito: " + pontosRespeito;
+
+
+}
+
+
+
+
+
+function respostaJogo(correta){
+
+
+
+if(correta){
+
+
+ganharPonto();
+
+
+document.getElementById("jogo1").innerHTML =
+
+"✅ Excelente escolha! Você ganhou pontos de respeito.";
+
+
+
+document.getElementById("jogo2").innerHTML =
+
+"🛡️ A equipe do respeito ficou mais forte!";
+
+
+
+}
+
+else{
+
+
+perderPonto();
+
+
+
+document.getElementById("jogo1").innerHTML =
+
+"❌ Pense melhor. Uma boa equipe protege seus colegas.";
+
+
+
+}
+
+
+
+}
+
+
+
+
+
+function escolherPalavra(palavra){
+
+
+
+if(palavra === "respeito"){
+
+
+ganharPonto();
+
+
+document.getElementById("jogo3").innerHTML =
+
+"🏆 Correto! Respeito é a principal arma contra o bullying.";
+
+
+}
+
+else{
+
+
+document.getElementById("jogo3").innerHTML =
+
+"⚠️ Essa escolha enfraquece a equipe. Tente novamente.";
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+function verificarMedalha(){
+
+
+
+let medalha = document.getElementById("medalha");
+
+
+
+if(pontosRespeito >= 6){
+
+
+medalha.innerHTML =
+
+"🥇 Líder Contra o Bullying - Você é um exemplo de respeito!";
+
+
+}
+
+
+else if(pontosRespeito >=3){
+
+
+medalha.innerHTML =
+
+"🥈 Guardião da Empatia - Continue ajudando sua equipe.";
+
+
+}
+
+
+else if(pontosRespeito >0){
+
+
+medalha.innerHTML =
+
+"🥉 Recruta do Respeito - Sua missão começou!";
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
 function enviar(){
+
 
 
 let texto = document.getElementById("texto").value;
@@ -1338,15 +2085,14 @@ return;
 
 document.getElementById("mensagem").innerHTML =
 
-"<br><b>💛 Obrigado por compartilhar.</b><br>" +
 
-"Seu sentimento é importante. Você merece respeito, apoio e acolhimento. " +
+"<br><b>💛 Mensagem recebida pela Central de Apoio.</b><br>" +
 
-"Procure um professor, familiar ou adulto de confiança quando precisar.";
-
+"Obrigado por confiar. Seus sentimentos importam. Procure um adulto de confiança quando precisar.";
 
 
-document.getElementById("texto").value = "";
+
+document.getElementById("texto").value="";
 
 
 }
@@ -1367,8 +2113,7 @@ let pontos = 0;
 
 
 
-
-let respostasCorretas = {
+let respostas = {
 
 
 p1:"certo",
@@ -1398,8 +2143,7 @@ p10:"certo"
 
 
 
-
-for(let pergunta in respostasCorretas){
+for(let pergunta in respostas){
 
 
 
@@ -1411,8 +2155,7 @@ let resposta = document.querySelector(
 
 
 
-
-if(resposta && resposta.value === respostasCorretas[pergunta]){
+if(resposta && resposta.value === respostas[pergunta]){
 
 
 pontos++;
@@ -1428,27 +2171,47 @@ pontos++;
 
 
 
-let mensagemResultado;
+
+let resultado = document.getElementById("resultado");
 
 
 
-if(pontos <= 3){
+resultado.classList.add("mostrar");
 
 
-mensagemResultado =
 
-"Continue aprendendo! O respeito e a empatia podem ser desenvolvidos todos os dias.";
+
+
+
+if(pontos < 5){
+
+
+
+resultado.innerHTML =
+
+"📚 <b>Missão concluída!</b><br><br>" +
+
+"Você conseguiu " + pontos + "/10 pontos.<br><br>" +
+
+"Continue estudando e treinando suas habilidades de respeito e empatia. " +
+
+"Todo grande defensor começa aprendendo! 🛡️";
 
 
 
 }
 
-else if(pontos <= 7){
+else if(pontos <= 6){
 
 
-mensagemResultado =
 
-"Muito bem! Você já possui bons conhecimentos sobre bullying e respeito.";
+resultado.innerHTML =
+
+"⭐ <b>Bom trabalho!</b><br><br>" +
+
+"Você conseguiu " + pontos + "/10 pontos.<br><br>" +
+
+"Você está no caminho certo. Continue fortalecendo a equipe contra o bullying! 🤝";
 
 
 
@@ -1457,29 +2220,25 @@ mensagemResultado =
 else{
 
 
-mensagemResultado =
 
-"Excelente! Você demonstra compreensão sobre a importância de combater o bullying.";
+resultado.innerHTML =
+
+"🏆⚔️ <b>MISSÃO VENCIDA!</b> ⚔️🏆<br><br>" +
+
+"Você conseguiu " + pontos + "/10 pontos.<br><br>" +
+
+"Excelente! Você demonstrou conhecimento, respeito e empatia. " +
+
+"Você faz parte da equipe que transforma a escola em um lugar melhor! 🌎🛡️";
+
+
+
+}
 
 
 
 }
 
-
-
-
-
-
-
-document.getElementById("resultado").innerHTML =
-
-"🎯 Você acertou <b>" + pontos + "/10</b> perguntas!<br><br>" +
-
-mensagemResultado;
-
-
-
-}
 
 
 
