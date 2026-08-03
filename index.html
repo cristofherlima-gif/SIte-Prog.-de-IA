@@ -1,356 +1,857 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Portal de Apoio ao Estudante - Bullying</title>
 
 <style>
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
+
 
 body{
-background:#f2f2f2;
-color:#333;
+
+    background:#fff8dc;
+    color:#333;
+    line-height:1.6;
+
 }
+
 
 header{
-background:#1565c0;
-color:white;
-padding:20px;
-text-align:center;
+
+    background:linear-gradient(135deg,#ff9800,#ffb300);
+    color:white;
+    text-align:center;
+    padding:30px;
+
 }
+
+
+header h1{
+
+    font-size:35px;
+    margin-bottom:10px;
+
+}
+
 
 nav{
-background:#0d47a1;
-padding:10px;
-text-align:center;
+
+    background:#f57c00;
+    padding:15px;
+    text-align:center;
+
 }
+
 
 nav a{
-color:white;
-text-decoration:none;
-margin:15px;
-font-weight:bold;
+
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+
 }
+
 
 nav a:hover{
-color:yellow;
+
+    color:#fff176;
+
 }
+
+
 
 section{
-padding:30px;
-max-width:900px;
-margin:auto;
+
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:30px 0;
+
 }
 
-h2{
-color:#1565c0;
-margin-bottom:15px;
-}
 
-img{
-width:100%;
-border-radius:10px;
-margin:20px 0;
-}
 
 .card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,.2);
-margin-bottom:30px;
+
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    margin-bottom:30px;
+
 }
 
-textarea{
-width:100%;
-height:120px;
-padding:10px;
-margin-top:10px;
+
+
+h2{
+
+    color:#e65100;
+    margin-bottom:15px;
+
 }
+
+
+
+h3{
+
+    color:#ef6c00;
+    margin-top:20px;
+
+}
+
+
+
+img{
+
+    width:100%;
+    border-radius:15px;
+    margin:20px 0;
+
+}
+
+
 
 button{
-background:#1565c0;
-color:white;
-padding:10px 20px;
-border:none;
-border-radius:5px;
-cursor:pointer;
-margin-top:10px;
+
+    background:#f57c00;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+
 }
+
 
 button:hover{
-background:#0d47a1;
+
+    background:#e65100;
+
 }
 
-.pergunta{
-margin-bottom:20px;
+
+
+textarea{
+
+    width:100%;
+    height:130px;
+    padding:15px;
+    border-radius:10px;
+    border:2px solid #ffb300;
+    resize:none;
+
 }
 
-footer{
-background:#1565c0;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:30px;
-}
+
 
 ul{
-margin-left:20px;
+
+    margin-left:25px;
+
 }
+
+
+
+footer{
+
+    background:#ef6c00;
+    color:white;
+    text-align:center;
+    padding:20px;
+
+}
+
+
+
+.link{
+
+    color:#e65100;
+
+}
+
+
+
+.pergunta{
+
+    background:#fff3cd;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:20px;
+
+}
+
+
 
 #resultado{
-font-size:20px;
-font-weight:bold;
-margin-top:20px;
-color:green;
+
+    font-size:20px;
+    color:#2e7d32;
+    font-weight:bold;
+    margin-top:20px;
+
 }
 
-a.link{
-color:#1565c0;
-}
+
 </style>
 
 </head>
+
+
 <body>
 
+
 <header>
+
 <h1>Portal de Apoio ao Estudante</h1>
-<p>Bullying: respeito faz toda a diferença.</p>
+
+<p>
+Bullying: juntos pela empatia, respeito e inclusão.
+</p>
+
 </header>
 
+
+
 <nav>
+
 <a href="#inicio">Início</a>
+
+<a href="#informacoes">Informações</a>
+
 <a href="#escuta">Portal de Escuta</a>
+
 <a href="#quiz">Quiz</a>
+
 <a href="#referencias">Referências</a>
+
 </nav>
+
+
+
+
 
 <section id="inicio">
 
+
 <div class="card">
 
-<h2>Bem-vindo!</h2>
+
+<h2>Bem-vindo ao Portal de Apoio ao Estudante</h2>
+
 
 <p>
-Este portal foi criado para informar, orientar e acolher estudantes que convivem
-com situações de bullying.
+
+Este portal foi criado para informar, orientar e acolher estudantes
+que passam por situações relacionadas ao bullying.
+
 </p>
 
-<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=900" alt="Escola">
 
 <p>
-Aqui você encontrará informações importantes, poderá fazer um pequeno quiz
-e conhecer formas de procurar ajuda.
+
+Aqui você encontrará informações sobre o que é bullying,
+como identificar esse problema, como ajudar alguém que sofre
+com essas situações e onde procurar apoio.
+
 </p>
+
+
+
+<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1000"
+alt="Estudantes na escola">
+
+
+
+<p>
+
+A escola deve ser um ambiente seguro, onde todos possam aprender,
+fazer amizades e desenvolver suas habilidades sem medo ou sofrimento.
+
+</p>
+
 
 </div>
 
+
 </section>
+
+
+
+
+
+<section id="informacoes">
+
+
+<div class="card">
+
+
+<h2>O que é bullying?</h2>
+
+
+
+<p>
+
+Bullying é uma forma de violência caracterizada por agressões
+intencionais e repetidas contra uma pessoa. Essas atitudes podem
+acontecer por meio de palavras, ações físicas ou pela internet.
+
+</p>
+
+
+<p>
+
+Alguns exemplos são: apelidos ofensivos, ameaças, humilhações,
+exclusão de grupos, espalhar boatos, agressões físicas e ataques
+nas redes sociais.
+
+</p>
+
+
+
+<h3>Tipos de bullying</h3>
+
+
+<ul>
+
+<li>
+<b>Verbal:</b> insultos, apelidos e comentários ofensivos.
+</li>
+
+<li>
+<b>Físico:</b> empurrões, agressões ou destruição de objetos.
+</li>
+
+<li>
+<b>Social:</b> excluir alguém ou espalhar rumores.
+</li>
+
+<li>
+<b>Virtual:</b> ataques realizados pela internet.
+</li>
+
+</ul>
+
+
+
+</div>
+
+
+</section>
+<section id="informacoes">
+
+
+<div class="card">
+
+
+<h2>Como combater o bullying?</h2>
+
+
+<p>
+
+Combater o bullying é uma responsabilidade de todos. Pequenas atitudes
+podem criar um ambiente escolar mais seguro e acolhedor.
+
+</p>
+
+
+<ul>
+
+<li>Respeitar as diferenças entre os colegas.</li>
+
+<li>Não apoiar brincadeiras que humilham outras pessoas.</li>
+
+<li>Ajudar quem está passando por dificuldades.</li>
+
+<li>Denunciar situações de agressão ou perseguição.</li>
+
+<li>Praticar empatia e colocar-se no lugar do outro.</li>
+
+</ul>
+
+
+
+<h3>O que fazer ao presenciar bullying?</h3>
+
+
+<p>
+
+Se você perceber uma situação de bullying, não incentive o agressor.
+Procure ajudar a vítima e informe um adulto responsável, como um professor,
+coordenador ou familiar.
+
+</p>
+
+
+
+<h3>Consequências do bullying</h3>
+
+
+<p>
+
+O bullying pode causar tristeza, medo, ansiedade, dificuldade de
+concentração, queda no desempenho escolar e problemas de autoestima.
+Por isso, pedir ajuda é uma atitude importante.
+
+</p>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
 
 <section id="escuta">
 
+
 <div class="card">
+
 
 <h2>Portal de Escuta</h2>
 
+
 <p>
-Escreva um desabafo (simulação).
-Nenhuma informação será armazenada.
+
+Este espaço é uma simulação de escuta. O texto escrito aqui não será
+armazenado. Ele serve apenas para demonstrar um ambiente de acolhimento.
+
 </p>
 
-<textarea id="texto" placeholder="Escreva aqui..."></textarea>
+
+
+<textarea id="texto"
+placeholder="Escreva seu desabafo aqui..."></textarea>
+
+
 
 <br>
 
-<button onclick="enviar()">Enviar</button>
+
+<button onclick="enviar()">
+
+Enviar mensagem
+
+</button>
+
+
 
 <p id="mensagem"></p>
 
-<h3>Frases motivacionais</h3>
+
+
+<h3>Você é importante!</h3>
+
 
 <ul>
-<li>Você merece respeito.</li>
-<li>Você não está sozinho.</li>
-<li>Pedir ajuda é um ato de coragem.</li>
-<li>Todos têm direito a estudar em paz.</li>
+
+<li>Você merece ser tratado com respeito.</li>
+
+<li>Se algo está machucando você, converse com alguém de confiança.</li>
+
+<li>Pedir ajuda demonstra coragem.</li>
+
+<li>Ninguém deve enfrentar o bullying sozinho.</li>
+
 </ul>
 
-<br>
+
 
 <h3>Procure ajuda</h3>
 
+
 <p>
-Converse com um professor, pedagogo, direção da escola,
-familiares ou outro adulto de confiança.
+
+Caso esteja passando por uma situação difícil, converse com:
+
 </p>
 
-</div>
-
-</section>
-
-<section id="quiz">
-
-<div class="card">
-
-<h2>Quiz</h2>
-
-<form id="quizForm">
-
-<div class="pergunta">
-<p>1. Espalhar apelidos ofensivos é bullying?</p>
-
-<input type="radio" name="p1" value="certo"> Sim
-
-<input type="radio" name="p1" value="errado"> Não
-
-</div>
-
-<div class="pergunta">
-<p>2. Ignorar alguém de propósito pode ser uma forma de bullying?</p>
-
-<input type="radio" name="p2" value="certo"> Sim
-
-<input type="radio" name="p2" value="errado"> Não
-
-</div>
-
-<div class="pergunta">
-<p>3. Se você sofrer bullying, deve procurar ajuda?</p>
-
-<input type="radio" name="p3" value="certo"> Sim
-
-<input type="radio" name="p3" value="errado"> Não
-
-</div>
-
-<div class="pergunta">
-<p>4. Respeitar as diferenças ajuda a combater o bullying?</p>
-
-<input type="radio" name="p4" value="certo"> Sim
-
-<input type="radio" name="p4" value="errado"> Não
-
-</div>
-
-<div class="pergunta">
-<p>5. Fazer piadas que machucam os colegas é correto?</p>
-
-<input type="radio" name="p5" value="errado"> Sim
-
-<input type="radio" name="p5" value="certo"> Não
-
-</div>
-
-<button type="button" onclick="corrigir()">
-Ver Resultado
-</button>
-
-</form>
-
-<p id="resultado"></p>
-
-</div>
-
-</section>
-
-<section id="referencias">
-
-<div class="card">
-
-<h2>Referências</h2>
 
 <ul>
 
-<li>
-<a class="link" href="https://www.gov.br/mec" target="_blank">
-Ministério da Educação
-</a>
-</li>
+<li>Professor ou professora.</li>
 
-<li>
-<a class="link" href="https://www.gov.br/saude" target="_blank">
-Ministério da Saúde
-</a>
-</li>
+<li>Pedagogo ou orientação escolar.</li>
 
-<li>
-<a class="link" href="https://www.unicef.org/brazil" target="_blank">
-UNICEF Brasil
-</a>
-</li>
+<li>Direção da escola.</li>
 
-<li>
-<a class="link" href="https://brasilescola.uol.com.br" target="_blank">
-Brasil Escola
-</a>
-</li>
+<li>Familiares ou responsáveis.</li>
+
+<li>Outro adulto de confiança.</li>
 
 </ul>
 
+
 </div>
+
 
 </section>
 
-<footer>
+
+
+
+
+
+
+<section id="quiz">
+
+
+<div class="card">
+
+
+<h2>Quiz: Aprendendo sobre Bullying</h2>
+
+
+
+<form id="quizForm">
+
+
+<div class="pergunta">
 
 <p>
-Projeto Escolar - Portal de Apoio ao Estudante
+<b>1.</b> Apelidos ofensivos repetidos contra uma pessoa podem ser considerados bullying?
 </p>
 
-</footer>
 
+<input type="radio" name="p1" value="certo"> Sim
+
+<br>
+
+<input type="radio" name="p1" value="errado"> Não
+
+
+</div>
+
+
+
+
+
+<div class="pergunta">
+
+<p>
+<b>2.</b> Ignorar e excluir alguém de propósito pode causar sofrimento?
+</p>
+
+
+<input type="radio" name="p2" value="certo"> Sim
+
+<br>
+
+<input type="radio" name="p2" value="errado"> Não
+
+
+</div>
+
+
+
+
+
+
+<div class="pergunta">
+
+<p>
+<b>3.</b> A melhor atitude ao sofrer bullying é guardar segredo e não contar para ninguém?
+</p>
+
+
+<input type="radio" name="p3" value="errado"> Sim
+
+<br>
+
+<input type="radio" name="p3" value="certo"> Não
+
+
+</div>
+
+
+
+
+
+
+
+<div class="pergunta">
+
+<p>
+<b>4.</b> Respeitar as diferenças ajuda a diminuir casos de bullying?
+</p>
+
+
+<input type="radio" name="p4" value="certo"> Sim
+
+<br>
+
+<input type="radio" name="p4" value="errado"> Não
+
+
+</div>
+
+
+
+
+
+
+
+<div class="pergunta">
+
+<p>
+<b>5.</b> Compartilhar fotos ou mensagens para humilhar alguém é uma atitude correta?
+</p>
+
+
+<input type="radio" name="p5" value="errado"> Sim
+
+<br>
+
+<input type="radio" name="p5" value="certo"> Não
+
+
+</div>
+
+
+
+
+
+<button type="button" onclick="corrigir()">
+
+Ver resultado
+
+</button>
+
+
+
+</form>
+
+
+
+<p id="resultado"></p>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section id="referencias">
+
+
+<div class="card">
+
+
+<h2>Referências</h2>
+
+
+
+<p>
+
+Fontes utilizadas para pesquisa:
+
+</p>
+
+
+<ul>
+
+
+<li>
+
+<a class="link" href="https://www.gov.br/mec" target="_blank">
+
+Ministério da Educação - MEC
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a class="link" href="https://www.gov.br/saude" target="_blank">
+
+Ministério da Saúde
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a class="link" href="https://www.unicef.org/brazil" target="_blank">
+
+UNICEF Brasil
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a class="link" href="https://www.who.int" target="_blank">
+
+Organização Mundial da Saúde
+
+</a>
+
+</li>
+
+
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+
+<p>
+
+Portal de Apoio ao Estudante - Projeto sobre Bullying
+
+</p>
+
+
+</footer>
 <script>
+
 
 function enviar(){
 
-let texto=document.getElementById("texto").value;
 
-if(texto==""){
+let texto = document.getElementById("texto").value;
 
-alert("Escreva um desabafo.");
+
+
+if(texto.trim() === ""){
+
+
+alert("Por favor, escreva uma mensagem antes de enviar.");
+
 
 return;
 
-}
-
-document.getElementById("mensagem").innerHTML=
-"<br><b>Obrigado por compartilhar.</b><br>Você merece respeito. Procure um professor, pedagogo ou um adulto de confiança caso precise de ajuda.";
-
-document.getElementById("texto").value="";
 
 }
+
+
+
+document.getElementById("mensagem").innerHTML =
+
+"<br><b>Obrigado por compartilhar.</b><br>" +
+
+"Seu sentimento é importante. Lembre-se: você merece respeito e pode procurar ajuda de um professor, familiar ou adulto de confiança.";
+
+
+
+document.getElementById("texto").value = "";
+
+
+}
+
+
+
+
+
 
 function corrigir(){
 
-let pontos=0;
 
-if(document.querySelector('input[name="p1"]:checked')?.value=="certo")
+let pontos = 0;
+
+
+
+let respostas = [
+
+["p1","certo"],
+
+["p2","certo"],
+
+["p3","certo"],
+
+["p4","certo"],
+
+["p5","certo"]
+
+];
+
+
+
+
+
+respostas.forEach(function(resposta){
+
+
+
+let pergunta = document.querySelector(
+'input[name="'+resposta[0]+'"]:checked'
+);
+
+
+
+if(pergunta && pergunta.value === resposta[1]){
+
+
 pontos++;
 
-if(document.querySelector('input[name="p2"]:checked')?.value=="certo")
-pontos++;
-
-if(document.querySelector('input[name="p3"]:checked')?.value=="certo")
-pontos++;
-
-if(document.querySelector('input[name="p4"]:checked')?.value=="certo")
-pontos++;
-
-if(document.querySelector('input[name="p5"]:checked')?.value=="certo")
-pontos++;
-
-document.getElementById("resultado").innerHTML=
-"Você acertou "+pontos+" de 5 perguntas.";
 
 }
 
+
+
+});
+
+
+
+
+
+document.getElementById("resultado").innerHTML =
+
+"Você acertou " + pontos + " de 5 perguntas!";
+
+
+
+}
+
+
+
+
+
 </script>
 
+
 </body>
+
+
 </html>
